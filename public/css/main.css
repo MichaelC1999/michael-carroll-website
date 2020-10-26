@@ -81,6 +81,7 @@ body {
     text-decoration: none;
     color: #225824;
     font: inherit;
+    font-size: 20px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -133,8 +134,8 @@ body {
   .mobile-nav__item a:active,
   .mobile-nav__item a:hover,
   .mobile-nav__item a.active {
-    background: #355070;
-    color: #6D597A;
+    background: #225824;
+    color: #CCDDB7;
     border-radius: 3px;
   }
   
@@ -149,7 +150,9 @@ body {
     display: none;
   }
 
-
+  .mobile h3 {
+    font-size: 18px;
+  }
 
   .btn {
     display: block;
@@ -194,12 +197,19 @@ body {
     .group {
         display: flex;
     }
-  
+    
+    .mobile h3 {
+      font-size: 27px;
+      width: 50%;
+      margin: auto;
+    }
+    
     .item {
         flex: 1;
         flex-direction: column;
         height: 100%;
         margin: 1rem;
+        text-align: center;
        
         /* border: .5px black solid; */
     }

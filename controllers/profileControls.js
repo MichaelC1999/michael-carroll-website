@@ -20,3 +20,9 @@ exports.getSkills = (req, res, next) => {
     })
 }
 
+exports.getContact = (req, res, next) => {
+    res.render('pages/contact', {
+        pageTitle: "Contact"
+    })
+}
+

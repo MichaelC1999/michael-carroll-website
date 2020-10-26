@@ -13,43 +13,50 @@
 
 <body>
     <div class="backdrop"></div>
-<header class="main-header">
-    <button id="side-menu-toggle" style="margin-left: 1rem;" class="btn">Menu</button>
-    <nav class="main-header__nav">
-        <ul class="main-header__item-list">
-            <li class="main-header__item">
-                <a class="" href="/">Profile</a>
+    <header class="main-header">
+        <button id="side-menu-toggle" style="margin-left: 1rem;" class="btn">Menu</button>
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item">
+                    <a class="<%= pageTitle === 'Profile' ? 'active' : '' %>" href="/">Profile</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= pageTitle === 'Projects' ? 'active' : '' %>" href="/projects">Projects</a>
+                </li>
+                
+                <li class="main-header__item">
+                    <a class="<%= pageTitle === 'Experience' ? 'active' : '' %>" href="/exp">Experience</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= pageTitle === 'Skills' ? 'active' : '' %>" href="/skills">Skills</a>
+                </li>         
+                <li class="main-header__item">
+                    <a class="<%= pageTitle === 'Contact' ? 'active' : '' %>" href="/contact">Contact</a>
+                </li>    
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__item-list">
+            <li class="mobile-nav__item">
+                <a class="<%= pageTitle === 'Profile' ? 'active' : '' %>" href="/">Profile</a>
             </li>
-            <li class="main-header__item">
-                <a class="" href="/projects">Projects</a>
+            <li class="mobile-nav__item">
+                <a class="<%= pageTitle === 'Projects' ? 'active' : '' %>" href="/projects">Projects</a>
             </li>
-
-            <li class="main-header__item">
-                <a class="" href="/exp">Experience</a>
+            <li class="mobile-nav__item">
+                <a class="<%= pageTitle === 'Experience' ? 'active' : '' %>" href="/exp">Experience</a>
             </li>
-            <li class="main-header__item">
-                <a class="" href="/skills">Skills</a>
-            </li>         
+            <li class="mobile-nav__item">
+                <a class="<%= pageTitle === 'Skills' ? 'active' : '' %>" href="/skills">Skills</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="<%= pageTitle === 'Contact' ? 'active' : '' %>" href="/contact">Contact</a>
+            </li>
         </ul>
         
     </nav>
-</header>
-
-<nav class="mobile-nav">
-        <ul class="mobile-nav__item-list">
-                <li class="mobile-nav__item">
-                    <a class="" href="/">Profile</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a class="" href="/projects">Projects</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a class="" href="/exp">Experience</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a class="" href="/skills">Skills</a>
-                </li>
-            </ul>
-</nav>
-
+    
     
