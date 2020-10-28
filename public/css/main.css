@@ -191,6 +191,10 @@ body {
     text-align: center;
   }
 
+  .item p, ul {
+    text-align: justify;
+  }
+
   .spacer * {
     margin: 11px;
   }
@@ -218,7 +222,6 @@ body {
         flex-direction: column;
         height: 100%;
         margin: 1rem;
-        text-align: center;
        
         /* border: .5px black solid; */
     }
