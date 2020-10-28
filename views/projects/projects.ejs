@@ -12,13 +12,13 @@
         <% } %>
         <div class="item">
             <h3><%= projects[x].title %></h3>
-            <div class="group">
-            <a class="btn" style="margin: 3px; flex: 1; flex-direction: row;" href="<%= projects[x].repoUrl %>">Check the Repo</a>
+            <div class="group" style="margin: 0;">
+            <a class="btn" style="margin: 12px 3px 0 3px; flex: 1; flex-direction: row;" href="<%= projects[x].repoUrl %>">Check the Repo</a>
             <% if (projects[x].appUrl) { %>
-                <a class="btn" style="margin: 3px; flex: 1; flex-direction: row;" href="<%= projects[x].appUrl %>">Live App</a>
+                <a class="btn" style="margin: 12px 3px 0 3px; flex: 1; flex-direction: row;" href="<%= projects[x].appUrl %>">Live App</a>
             <% } %>
             </div>
-            <h3><%= projects[x].dateCreated %></h3>
+            <h4><%= projects[x].dateCreated %></h4>
             <img src="<%= projects[x].imageUrl %>" class="image">
             <p><%= projects[x].description %></p>
             
